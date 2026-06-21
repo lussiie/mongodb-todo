@@ -1,7 +1,7 @@
 
-print("====================")
+
 print("Starting Todo Tasks")
-print("====================")
+
 // Task 2.1
 if (db.getCollectionNames().includes("todos")) {
     db.todos.drop()
@@ -432,6 +432,5 @@ db.todos.aggregate([
 )
 
 
-print("====================")
+
 print("ALL TASKS FINISHED")
-print("====================")

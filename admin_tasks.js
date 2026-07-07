@@ -1,19 +1,27 @@
 
 print("====================")
-print("Stage 9 Started")
+print("Admin Tasks Started")
 print("====================")
+
 use("todoapp")
 
 
-print("Task 9.2 command prepared")
+print("Collections:")
+printjson(db.getCollectionNames())
 
 
-print("Task 9.3 command prepared")
+print("Indexes:")
+printjson(db.todos.getIndexes())
 
 
-print("Task 9.4 command prepared")
+print("Total todos:")
+print(db.todos.countDocuments())
+
+
+print("Database statistics:")
+printjson(db.stats())
 
 
 print("====================")
-print("Stage 9 Finished")
+print("Admin Tasks Finished")
 print("====================")
